@@ -7,14 +7,10 @@ const app = express()
 
 app.use(express.json())
 
-
-
-const db = new sqlite3.Database('userData.db', (err) => {
-    if (err){
-        console.error('Error connecting to database:', err.message)
-    } else {
-        console.log('Connected to the userData.db database')
-    } 
-}) 
-
-
+const db = new sqlite3.Database('userData.db', err => {
+  if (err) {
+    console.error('Error connecting to database:', err.message)
+  } else {
+    console.log('Connected to the userData.db database')
+  }
+})
