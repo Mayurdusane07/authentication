@@ -1,0 +1,39 @@
+
+### register user 
+
+POST http://localhost:3000/register 
+Content-Type: application/json 
+
+{
+  "username": "rahul_sonar", 
+  "name": "Mayur",
+  "password": "rahulsonar123", 
+  "gender": "male",
+  "location": "Pune"
+} 
+
+GET http://localhost:3000/users  
+
+
+### login 
+
+POST http://localhost:3000/login 
+Content-Type: application/json 
+
+{
+  "username": "rahul_sonar",
+  "password": "rahulsonar123"
+} 
+ 
+ 
+### update
+
+PUT http://localhost:3000/change-password
+Content-Type: application/json 
+
+{
+  "username": "rahul_sonar",
+  "oldPassword": "rahulsonar123",
+  "newPassword": "rahul@123"
+}
+
